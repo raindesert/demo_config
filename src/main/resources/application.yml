@@ -1,0 +1,20 @@
+server:
+ port: 8091
+
+eureka:
+ client:
+  service-url:
+   defaultZone: http://localhost:8761/eureka/
+
+spring:
+ application:
+  name: configServer
+ cloud:
+  config:
+   server:
+    git:
+     uri: https://github.com/raindesert/configserver
+     search-paths: /**
+   label: master
+   username: raindesert
+   password: 111111
