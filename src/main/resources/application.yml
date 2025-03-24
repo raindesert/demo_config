@@ -13,8 +13,6 @@ spring:
   config:
    server:
     git:
-     uri: https://gitee.com/raindesert/configserver
+     uri: https://github.com/raindesert/configserver
      search-paths: /**
      label: master
-     username: raindesert
-     password: xxxxxxx
